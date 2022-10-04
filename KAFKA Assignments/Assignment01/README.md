@@ -78,4 +78,8 @@ https://github.com/Akshit99/Inueron_BDE_Assignments/blob/a2099af2bd525e10a7777f3
 - Reset the counter to 0 if the poll() extracts records
 - If counter == 20(threshold), then break out of loop and close the consumer.
 
-![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/dataframe.PNG?raw=true)
+![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/df.PNG?raw=true)
+
+
+## Conclusion:
+- Kafka Basic were successfully executed with Topic Creation, Schema Registry Connections, Producer, Consumer, Consumer groups, Reading and Writing csv data from KAFKA.
