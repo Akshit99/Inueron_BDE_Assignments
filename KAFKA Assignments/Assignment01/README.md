@@ -82,4 +82,4 @@ https://github.com/Akshit99/Inueron_BDE_Assignments/blob/a2099af2bd525e10a7777f3
 
 
 ## Conclusion:
-- Kafka Basic were successfully executed with Topic Creation, Schema Registry Connections, Producer, Consumer, Consumer groups, Reading and Writing csv data from KAFKA.
+- Kafka Basics were successfully executed with Topic Creation, Schema Registry Connections, Producer, Consumer, Consumer groups, Reading and Writing csv data from KAFKA.
