@@ -1,9 +1,9 @@
 # Assignment01 of Kafka
 
 ## This assignment is done to test skills on:
-#### 1. Creating Kafka topics and Schema registry 
-#### 2. Create Producer and Consumers read from CSV data
-#### 3. Testing multiple consumer groups/ single groups
+-  Creating Kafka topics and Schema registry 
+-  Create Producer and Consumers read from CSV data
+-  Testing multiple consumer groups/ single groups
 
 
 ## 1. Create one kafka topic named as "restaurent-take-away-data" with 3 partitions
@@ -22,7 +22,7 @@ key-schema
 
  ## 3. Write a kafka producer program to read data records from restaurent data csv file. *Read the latest version of schema and schema_str from schema registry.*
 
-#### Reading schema from Schema registry
+#### **Reading schema from Schema registry**
 
 https://github.com/Akshit99/Inueron_BDE_Assignments/blob/ae4e57301b4b5ee69895954ba2be1eb7a6ed68e7/KAFKA%20Assignments/Assignment01/restaurants_producer.py#L109-L119
 
