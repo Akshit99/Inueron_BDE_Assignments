@@ -13,7 +13,7 @@
 ## 2. Setup key (string) & value (json) schema in the confluent schema registry
 
 Json Schema
-https://github.com/Akshit99/Inueron_BDE_Assignments/blob/9a1b45b31ccbd14d9fc111bdaebab00c428b8885/KAFKA%20Assignments/Assignment01/screenshots/schema.json#L1-L34
+https://github.com/Akshit99/Inueron_BDE_Assignments/blob/79957bafbe1b6a0c8eba2a68008e9f98dd154b6a/KAFKA%20Assignments/Assignment01/schema.json#L1-L34
 
 key-schema
 ```
