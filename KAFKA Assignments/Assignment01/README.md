@@ -12,7 +12,9 @@
 
 ## 2. Setup key (string) & value (json) schema in the confluent schema registry
 
-![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/json_schema.PNG?raw=true)
+Json Schema
+https://github.com/Akshit99/Inueron_BDE_Assignments/blob/9a1b45b31ccbd14d9fc111bdaebab00c428b8885/KAFKA%20Assignments/Assignment01/screenshots/schema.json#L1-L34
+
 key-schema
 ```
 "string"
@@ -38,14 +40,16 @@ python restaurants_producer.py
 https://github.com/Akshit99/Inueron_BDE_Assignments/blob/ae4e57301b4b5ee69895954ba2be1eb7a6ed68e7/KAFKA%20Assignments/Assignment01/restaurant_consumers1.py#L72-L76
 https://github.com/Akshit99/Inueron_BDE_Assignments/blob/ae4e57301b4b5ee69895954ba2be1eb7a6ed68e7/KAFKA%20Assignments/Assignment01/restaurant_consumers2.py#L77-L81
 Both these cases were tested by changing GroupId to:
-Different Groups Case:  "G2" , "G3"
+
+### Different Groups Case:  "G2" , "G3"
 
 Consumer1 
 ![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/dg_consumer1.PNG?raw=true)
 Consumer2
 ![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/dg_consumer2.PNG?raw=true)
+---
 
-Same Groups Case: "G1" , "G1"
+### Same Groups Case: "G1" , "G1"
 
 Consumer1
 ![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/sg_consumer1.PNG?raw=true)
@@ -53,12 +57,19 @@ Consumer1
 Consumer2 
 ![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/sg_consumer2.PNG?raw=true)
 
+---
 ## Findings:
-### 1. When different groups were passed, Each consumer will read all the partitions simulataneously as there is no retriction for them bring in same group. So both end up printing same Total records : 74817
-### 2. When same groups were passed, Each consumer is assigned a specific set of partition and it can only consume message from that specific partition. So there was a split between both consumer and both ended up reading unique records. 
+- When different groups were passed, Each consumer will read all the partitions simulataneously as there is no restriction on them of being in the same group. So both end up printing same Total records : 74817
+- When same groups were passed, Each consumer is assigned a specific set of partition and it can only consume message from that specific partition. So there was a split between both consumer and both ended up reading unique records. 
 
-### Consumer1 printed : 24795 records  
-### Consumer2 printed: 50022 records 
-### Total: 74817 (same as one consumer of different groups)
+ - Consumer1 printed : 24795 records  
+ - Consumer2 printed: 50022 records 
+ - Total: 74817 (same as one consumer of different groups)
   
 ---
+
+## 6. write another kafka consumer to read data from kafka topic and from the consumer code create one csv file "output.csv" and append consumed records output.csv file.
+
+
+### Logic 
+- Counter to 
