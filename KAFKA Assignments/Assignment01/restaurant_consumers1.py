@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
-
-
 import argparse
 
 from confluent_kafka import Consumer
@@ -20,8 +17,6 @@ SSL_MACHENISM = 'PLAIN'
 SCHEMA_REGISTRY_API_KEY = 'VOSAEKOIS2ZHEW7D'
 SCHEMA_REGISTRY_API_SECRET = 'd8TaOu/Wy4sjYBL1IrxC1bcaqljMRq5ulZ/qg8CtNXhDUQ2X86nPcSUQ8g0sEf36'
 
-
-# In[4]:
 
 
 def sasl_conf():
@@ -102,8 +97,6 @@ def main(topic):
 
     consumer.close()
 
-
-# In[6]:
 
 
 main("restaurant-take-away-data")
