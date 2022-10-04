@@ -68,8 +68,14 @@ Consumer2
   
 ---
 
-## 6. write another kafka consumer to read data from kafka topic and from the consumer code create one csv file "output.csv" and append consumed records output.csv file.
+## 6. Write another kafka consumer to read data from kafka topic and from the consumer code create one csv file "output.csv" and append consumed records output.csv file.
 
+https://github.com/Akshit99/Inueron_BDE_Assignments/blob/a2099af2bd525e10a7777f30664199e2a805aeb8/KAFKA%20Assignments/Assignment01/restaurant_consumers_to_csv.py#L75-L98
 
-### Logic 
-- Counter to 
+### Logic for closing consumer once partition is read(No more messages)
+- Create a empty_poll_counter variable outside your while loop.
+- Increased the counter every time poll() fetches 0 records from Kafka Brokers.
+- Reset the counter to 0 if the poll() extracts records
+- If counter == 20(threshold), then break out of loop and close the consumer.
+
+![alt text](https://github.com/Akshit99/Inueron_BDE_Assignments/blob/main/KAFKA%20Assignments/Assignment01/screenshots/dataframe.PNG?raw=true)
