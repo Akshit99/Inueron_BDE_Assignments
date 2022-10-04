@@ -17,14 +17,14 @@ FILE_PATH = os.path.join(os.getcwd(),"restaurant_orders.csv")
 
 columns=['order_number', 'order_date', 'item_name', 'quantity', 'product_price', 'total_products']
 
-API_KEY = '76QL25TAUGS5BDHN'
-ENDPOINT_SCHEMA_URL  = 'https://psrc-mw731.us-east-2.aws.confluent.cloud'
-API_SECRET_KEY = 'V7aojQeFFBTsvRP1li2ooSGEEQhL4TtEYrcMlbYAxHd85Mct/mHOIue/ozmviXk3'
-BOOTSTRAP_SERVER = 'pkc-ymrq7.us-east-2.aws.confluent.cloud:9092'
+API_KEY = 'api_key'
+ENDPOINT_SCHEMA_URL  = 'https://schema.url'
+API_SECRET_KEY = '<---secret--key>'
+BOOTSTRAP_SERVER = 'bottstrap.url'
 SECURITY_PROTOCOL = 'SASL_SSL'
 SSL_MACHENISM = 'PLAIN'
-SCHEMA_REGISTRY_API_KEY = 'VOSAEKOIS2ZHEW7D'
-SCHEMA_REGISTRY_API_SECRET = 'd8TaOu/Wy4sjYBL1IrxC1bcaqljMRq5ulZ/qg8CtNXhDUQ2X86nPcSUQ8g0sEf36'
+SCHEMA_REGISTRY_API_KEY = '<---api--key>'
+SCHEMA_REGISTRY_API_SECRET = '<---secret--key>'
 
 
 
